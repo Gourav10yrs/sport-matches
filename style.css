@@ -10,12 +10,27 @@ a {
     font-size: 15px;
     cursor: pointer;
 }
+h2 {
+    font-size: 21px;
+    font-weight: 500;
+}
+h4{
+    font-size: 17px;
+    font-weight: 500;
+}
 .line-divider{
     width: 40px;
     height: 1px;
     background-color: #ECEEF0;
     margin-left: 18px;
 }
+.sub-head {
+    margin: 20px 0px 20px 0px;
+    color: #11263C;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 /* === Start Nav Bar Menu === */
 .nav-bar {
@@ -38,14 +53,17 @@ a {
     display: flex;
 }
 
+.contaner {
+    flex:5;
+    flex-direction: row;
+}
+
 .top-bar{
     height: 45px;
     border-bottom: 1px #ECEEF0 solid;
     color: #A0A8B1;
     margin-top : 15px;
     display: flex;
-    flex:5;
-    flex-direction: row;
 }
 .menu a{
     padding-right: 30px;
@@ -113,3 +131,77 @@ a {
 }
 /* === End Top Bar Menu === */
 
+.main-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.left-section{
+    flex: 0.8;
+    margin: 30px 0px 0px 30px;    
+}
+
+.card {
+    width: 100%;
+    height: 250px;
+    border: 1px #ECEEF0 solid;
+    border-radius: 20px;
+}
+.score-card {
+    height: 300px;
+}
+
+/* === Start of Main Content === */
+.content {
+    flex: 2.3;
+    margin: 30px 0px 0px 30px;
+}
+.win-card {
+    border: none;
+    background-color: #6F4AF1;
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    height: 200px;
+}
+.win-card-details {
+    flex: 2;
+    padding: 20px 10px 20px 20px;
+}
+.win-card-details p{
+    color: #D4C9FA;
+    line-height: 1.6;
+    padding-top: 10px;
+}
+.win-card-img {
+    flex: 1;
+    margin-top: -37px;
+    margin-right: 10px;
+}
+.win-card-img img {
+    height: 237px;
+}
+.more-details {
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 2px;
+    cursor: pointer;
+    color: #6F4AF1;
+    border-radius: 10px;
+}
+
+
+/* === End of Main Content === */
+
+.right-section{
+    flex: 1; 
+    margin: 0px 0px 0px 30px;
+    background-color: #F1F2F5;
+    border-left: 1px #ECEEF0 solid;
+    height: 100vh;
+}
