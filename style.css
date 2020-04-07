@@ -30,6 +30,15 @@ h4{
     display: flex;
     justify-content: space-between;
 }
+.name-sub {
+    font-size: 14px;
+    font-weight: 600;
+    color: #11263C;
+}
+.name-small {
+    color: #A0A8B1;
+    font-size: 12px;
+}
 
 
 /* === Start Nav Bar Menu === */
@@ -138,8 +147,8 @@ h4{
 }
 
 .left-section{
-    flex: 0.8;
-    margin: 30px 0px 0px 30px;    
+    flex: 1;
+    margin: 30px 0px 0px 20px;    
 }
 
 .card {
@@ -148,15 +157,113 @@ h4{
     border: 1px #ECEEF0 solid;
     border-radius: 20px;
 }
+
+/* Start of Score Card  */
 .score-card {
-    height: 300px;
+    height: 285px;
 }
+.score-card-box {
+    height: 200px;
+    padding: 20px 12px 20px 12px;
+}
+.score-card-match {
+    text-align: center;
+    color: #A2A9B3;
+    border-top: 1px #ECEEF0 solid;
+    padding: 10px;
+}
+.score-card-about, .score-card-team {
+    display: flex;
+}
+.match-name {
+    flex: 2.5;
+}
+.match-status {
+    flex: 1;
+    background-color: #FDEAED;
+    border-radius: 8px;
+    color: #E1233D;
+    text-align: center;
+    padding: 8px 0px 8px 0px;
+    margin: auto;
+    cursor: pointer;
+}
+.match-status p {
+    font-size: 14px;
+}
+
+.score-card-team {
+    margin: 20px;
+    text-align: center;
+}
+
+.score-card-team-logo{
+    flex: 1;
+}
+
+.score-card-team-logo img {
+    height: 50px;
+}
+
+.score-card-score {
+    flex: 1;
+    margin: auto;
+}
+
+#team-1, #team-2, #team-b{
+    font-size: 30px;
+    font-weight: 800;
+}
+#team-b{
+    color: #CFD4D8;
+}
+#team-2 {
+    color: #B7BDC4;
+}
+
+.score-card-more{
+    display: flex;
+    color: #B7BDC4;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+.score-card-star{
+    flex: 0.8;
+    background-color: #F4F5F6;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.score-card-bet{
+    flex: 1;
+    background-color: #714DF2;
+    color: #ffffff;
+    border-radius: 5px;
+    text-align: center;  
+    padding: 15px 10px 15px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.score-card-watch{
+    flex: 2;
+    background-color: #F4F5F6;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    cursor: pointer;
+}
+
+/* End of Score card */
 
 /* === Start of Main Content === */
 .content {
     flex: 2.3;
-    margin: 30px 0px 0px 30px;
+    margin: 30px 0px 0px 20px;
 }
+
+/* Start of Win Card */
 .win-card {
     border: none;
     background-color: #6F4AF1;
@@ -164,10 +271,11 @@ h4{
     flex-wrap: wrap;
     color: #ffffff;
     height: 200px;
+    box-shadow: 0 12px 20px rgba(111, 74, 241, 0.22);
 }
 .win-card-details {
     flex: 2;
-    padding: 20px 10px 20px 20px;
+    padding: 20px 0px 0px 20px;
 }
 .win-card-details p{
     color: #D4C9FA;
@@ -185,7 +293,7 @@ h4{
 .more-details {
     background-color: #ffffff;
     border: none;
-    padding: 12px 50px;
+    padding: 10px 50px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -194,7 +302,7 @@ h4{
     color: #6F4AF1;
     border-radius: 10px;
 }
-
+/* End of Win Card */
 
 /* === End of Main Content === */
 
