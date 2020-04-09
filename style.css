@@ -18,6 +18,33 @@ h4{
     font-size: 17px;
     font-weight: 500;
 }
+table {
+    width:100%;
+    text-align: center;
+}
+table, th, td {
+    border-collapse: collapse;
+}
+th {
+    background-color: #FBFBFD;
+    color: #bec1c5;
+    border-top: 1px #ECEEF0 solid;
+    border-bottom: 1px #ECEEF0 solid;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: left;
+    padding: 10px; 
+}
+tr {
+    border-bottom: 1px #ECEEF0 solid;
+}
+td {
+    padding: 16px 6px;
+}
+td img {
+    height: 25px;
+}
+
 .line-divider{
     width: 40px;
     height: 1px;
@@ -306,6 +333,46 @@ h4{
     flex: 2.3;
     margin: 30px 0px 0px 20px;
 }
+.list-card{
+    height: auto;
+}
+.list-title{
+    padding: 15px;
+}
+.list-title span {
+    padding-right: 15px;
+}
+.list-title span:nth-child(5){
+    float: right;
+}
+.red-span, .light-span, .green-span, .blue-span {
+    border-radius: 4px;
+    text-align: center;
+    padding: 3px;
+    margin: auto;
+    cursor: pointer;
+    font-size: 14px;
+}
+.blue-span {
+    color: #623CEA;
+    border: 1px #dbd9e0 solid;
+    background-color: #f7f5ff;
+}
+.red-span {
+    border: 1px #F2D4D9 solid;
+    color: #E1233D;
+    background-color: #FDEAED;
+}
+.light-span{
+    background-color: #F8F9F9;
+    color: #6F7C89;
+    border: 1px #DFE1E4 solid;
+}
+.green-span {
+    background-color: #DAF2EB;
+    color: #43BC9C;
+    border: 1px #D4EFE7 solid;
+}
 
 /* Start of Win Card */
 .win-card {
@@ -346,6 +413,15 @@ h4{
     color: #6F4AF1;
     border-radius: 10px;
 }
+.more-bet {
+    background-color: #6f4af1;
+    color: #f5f2f2;
+}
+.button-tech {
+    color:  #bec1c5;
+    border-radius: 20px;
+    padding: 15px;
+}
 /* End of Win Card */
 
 /* === End of Main Content === */
@@ -355,7 +431,7 @@ h4{
     margin: 0px 0px 0px 30px;
     background-color: #F1F2F5;
     border-left: 1px #ECEEF0 solid;
-    height: 100vh;
+    height: 120vh;
 }
 .right-section-data {
     padding: 20px;
@@ -367,10 +443,14 @@ h4{
 .curve{
     background-image: url(circle.svg);
     height: 20px;
-    width: 237px;
+    width: 238px;
     background-repeat: repeat-x;
     position: absolute;
     margin-top: -12px;
+}
+
+.curve-dark {
+    background-image: url(dark-circle.svg);
 }
 .left-curve, .right-curve{
     background-image: url(circle.svg);
@@ -563,5 +643,14 @@ input[type=radio] + label:before{
 }
 input[type=checkbox] + label:before{
   border-radius:2px;
+}
+.place-bet {
+    background-color: #e2e3eb;
+    text-align: center;
+    padding-bottom: 12px;
+}
+.support {
+    margin-top: 20px;
+    border-top: 1px #ECEEF0 solid;
 }
 
