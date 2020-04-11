@@ -88,10 +88,31 @@ td img {
     border-right: 1px #ECEEF0 solid;
     color: #CACED3;
     text-align: center;
+    position: fixed;
 }
 #nav-bar-top {
     margin-top: 15px;
     height: 45px;
+}
+.nav-bar-list {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.nav-bar-iteam {
+    padding: 15px;
+}
+.nav-bar-iteam i {
+    font-size: 20px;
+}
+.nav-bar-bottom {
+    position: absolute;
+    bottom: 10px;
+    padding: 13px;
+    background-color: #623CEA;
+    border-radius: 50%;
+    margin: 12px;
+    color: #ffffff;
 }
 
 /* === End Nav Bar Menu === */
@@ -104,6 +125,7 @@ td img {
 .contaner {
     flex:5;
     flex-direction: row;
+    margin-left: 60px;
 }
 
 .top-bar{
@@ -373,7 +395,20 @@ td img {
     color: #43BC9C;
     border: 1px #D4EFE7 solid;
 }
-
+.downarrow-red, .uparrow-green{
+    position: absolute;
+    transform: rotate(45deg);
+    border-bottom: 7px solid #e1238c;
+    border-left: 7px solid transparent;
+    margin-top: 24px;
+    margin-left: -16px;
+ }
+ .uparrow-green {
+    border-left: 7px solid #43BC9C;
+    border-bottom: 7px solid transparent;
+    margin-top: -10px;
+    margin-left: -16px;
+ }
 /* Start of Win Card */
 .win-card {
     border: none;
